@@ -1,6 +1,5 @@
 ##### 邮箱 / Email / Contact
 <code>jasperwmjj@gmail.com</code><br>
-**Mobile:** 13703039187
 
 ##### 教育经历 / Education
 **南京大学**, 信息管理与信息系统本科 (2022.09 – 2026.06) <br>
