@@ -73,18 +73,30 @@
         /* border: 3px solid #ffffff !important; */
     }
 
-    /* 🔥 修复超链接：允许点击 + 新窗口打开 + 显示蓝色链接样式 */
-.main-body a {
-    pointer-events: auto !important;
-    color: #0d6efd !important;
-    text-decoration: underline !important;
-    cursor: pointer !important;
-}
-/* 鼠标悬浮效果 */
-.main-body a:hover {
-    color: #0a58ca !important;
-    opacity: 0.8 !important;
-}
+        /* 🔥 修复超链接：允许点击 + 新窗口打开 + 显示蓝色链接样式 */
+    .main-body a {
+        pointer-events: auto !important;
+        color: #0d6efd !important;
+        text-decoration: underline !important;
+        cursor: pointer !important;
+    }
+    /* 鼠标悬浮效果 */
+    .main-body a:hover {
+        color: #0a58ca !important;
+        opacity: 0.8 !important;
+    }
+    /* 双语切换样式 */
+    .lang-zh [lang-tag]:after { content: attr(lang-zh); }
+    .lang-en [lang-tag]:after { content: attr(lang-en); }
+    [lang-tag]:first-child { display: none; }
+
+    /* 按钮样式优化 */
+    #langBtn {
+        border-radius: 20px;
+        padding: 4px 12px;
+        font-size: 14px;
+    }
+
 </style>
 
     <!-- Bootstrap core JS-->
@@ -147,20 +159,25 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                    <!-- 导航菜单 双语 -->
                     <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#home">HOME</a>
+                        <a class="nav-link me-lg-3" href="#home" lang-tag="nav-home">HOME / 首页</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#awards">AWARDS</a>
+                        <a class="nav-link me-lg-3" href="#awards" lang-tag="nav-awards">AWARDS / 奖项</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#experience">EXPERIENCE</a>
+                        <a class="nav-link me-lg-3" href="#experience" lang-tag="nav-exp">EXPERIENCE / 经历</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#interests">INTERESTS</a>
+                        <a class="nav-link me-lg-3" href="#interests" lang-tag="nav-interest">INTERESTS / 兴趣</a>
                     </li>
                 </ul>
-
+                <!-- 语言切换按钮 -->
+                <button id="langBtn" class="btn btn-sm btn-outline-primary me-3">中 / EN</button>
+                <div class="social-links d-flex align-items-center gap-3">
+                    <a href="https://www.xiaohongshu.com/user/profile/5b82b0c67484ed000115719b" target="_blank" class="text-dark fs-5"><i class="bi bi-bookmark-heart"></i></a>
+                </div>
                 <div class="social-links d-flex align-items-center gap-3">
                     <a href="https://www.xiaohongshu.com/user/profile/5b82b0c67484ed000115719b" target="_blank" class="text-dark fs-5"><i class="bi bi-bookmark-heart"></i></a>
                 </div>
@@ -202,7 +219,7 @@
     <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="awards">
         <div class="container px-5">
             <header>
-                <h2 id="awards-subtitle"><i class="bi bi-award-fill"></i>AWARDS </h2>
+                <h2 id="awards-subtitle"><i class="bi bi-award-fill"></i>AWARDS / 荣誉奖励 </h2>
             </header>
             <div class="main-body" id="awards-md"></div>
 
@@ -214,7 +231,7 @@
     <section class="bg-gradient-primary-to-secondary-dark mt5 md5" id="experience">
         <div class="container px-5">
             <header>
-                <h2 id="experience-subtitle"><i class="bi bi-briefcase-fill"></i> EXPERIENCE </h2>
+                <h2 id="experience-subtitle"><i class="bi bi-briefcase-fill"></i> EXPERIENCE / 项目经历 </h2>
             </header>
             <div class="main-body" id="experience-md"></div>
         </div>
@@ -225,7 +242,7 @@
     <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="interests">
         <div class="container px-5">
             <header>
-                <h2 id="interests-subtitle"><i class="bi bi-camera-fill"></i>&nbsp;INTERESTS & HOBBIES</h2>
+                <h2 id="interests-subtitle"><i class="bi bi-camera-fill"></i>&nbsp;INTERESTS & HOBBIES / 兴趣爱好</h2>
             </header>
             <!-- 内容从 md 文件加载，和原来用法完全一样 -->
             <div class="main-body" id="interests-md"></div>
@@ -246,6 +263,25 @@
         </div>
     </footer>
 
+    <script>
+    // 初始化语言（记忆用户上次选择）
+    let currentLang = localStorage.getItem('lang') || 'zh';
+    document.getElementById('langBtn').textContent = currentLang === 'zh' ? 'EN' : '中';
+
+    // 页面加载时加载对应语言
+    window.onload = () => {
+        loadMarkdownFiles(currentLang);
+    };
+
+    // 点击按钮切换语言
+    document.getElementById('langBtn').addEventListener('click', () => {
+        currentLang = currentLang === 'zh' ? 'en' : 'zh';
+        document.getElementById('langBtn').textContent = currentLang === 'zh' ? 'EN' : '中';
+        localStorage.setItem('lang', currentLang);
+        // 调用 scripts.js 里的函数切换MD
+        loadMarkdownFiles(currentLang);
+    });
+    </script>
 </body>
 
 </html>

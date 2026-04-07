@@ -115,3 +115,16 @@ img {
   user-select: none !important;
   -webkit-user-drag: none !important;
 }
+
+
+/* 双语切换样式 */
+.lang-zh [lang-tag]:after { content: attr(lang-zh); }
+.lang-en [lang-tag]:after { content: attr(lang-en); }
+[lang-tag]:first-child { display: none; }
+
+/* 按钮样式优化 */
+#langBtn {
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 14px;
+}
