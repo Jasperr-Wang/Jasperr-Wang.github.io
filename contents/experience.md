@@ -19,9 +19,9 @@
 <iframe 
   src="static/files/guanshouguanhuatu.pdf#toolbar=0" 
   width="100%" 
-  height="400px"
-  style="border:none; pointer-events:none;"
-></iframe>
+  height="500px"
+  style="border:none; border-radius:8px;">
+</iframe>
 
 • **一带一路·日本大数据产业发展调研** | 南京大学本科生全球科考项目 2025年 为期10天<br>
   • 调研范围：日本东京、筑波多地，走访12家高校与企业机构<br>
