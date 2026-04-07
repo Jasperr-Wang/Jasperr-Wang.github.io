@@ -79,10 +79,10 @@
   • 独立设计9份5·25大学生心理健康节主题展板及立牌，落地校园线下宣传场景。<br>
   项目成果：系列推文总浏览量超15000，项目获第四届中国大学生校园媒体大赛数据内容与数字创意类三等奖；设计物料在校内展出。<br>
 
-- [南大声音地图︱ Vol.1 即此富苍翠，自然引翔栖](sslocal://flow/file_open?url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FLEYXkbncVKwBzMb6vET96w&flow_extra=eyJsaW5rX3R5cGUiOiJjb2RlX2ludGVycHJldGVyIn0=)  
-- [南大声音地图｜Vol.2 校运会特辑—生命在于运动](sslocal://flow/file_open?url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FQUqXHTrFvr4AZQ0OS1S5fQ&flow_extra=eyJsaW5rX3R5cGUiOiJjb2RlX2ludGVycHJldGVyIn0=)  
-- [南大声音地图 | Vol.3 学习的千百种](sslocal://flow/file_open?url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FvFiJvWAgjKYmCS_R5UDnbg&flow_extra=eyJsaW5rX3R5cGUiOiJjb2RlX2ludGVycHJldGVyIn0=)  
-- [嘘！这条推送，重要的是声音](sslocal://flow/file_open?url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FSKOSHON-xOLSHCdlUhXOjA&flow_extra=eyJsaW5rX3R5cGUiOiJjb2RlX2ludGVycHJldGVyIn0=)  
+- <a href="https://mp.weixin.qq.com/s/LEYXkbncVKwBzMb6vET96w" target="_blank">南大声音地图︱ Vol.1 即此富苍翠，自然引翔栖</a>
+- <a href="https://mp.weixin.qq.com/s/QUqXHTrFvr4AZQ0OS1S5fQ" target="_blank">南大声音地图｜Vol.2 校运会特辑—生命在于运动</a>
+- <a href="https://mp.weixin.qq.com/s/vFiJvWAgjKYmCS_R5UDnbg" target="_blank">南大声音地图 | Vol.3 学习的千百种</a>
+- <a href="https://mp.weixin.qq.com/s/SKOSHON-xOLSHCdlUhXOjA" target="_blank">嘘！这条推送，重要的是声音</a>
 
 • **山谷日寄｜小程序策划与全渠道宣发运营**<br>
   核心工作：<br>

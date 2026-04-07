@@ -27,39 +27,65 @@
     <link type="text/css" href="static/css/styles.css" rel="stylesheet" />
     <link type="text/css" href="static/css/main.css" rel="stylesheet" />
 
-    <!-- 👇 这里是全局字体 + 字号优化，直接复制这段 -->
-    <style>
-        /* 全局字体：英文用 Mulish，中文用 Noto Sans SC */
-        body {
-            font-family: "Mulish", "Noto Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
-            font-size: 15px !important; /* 整体正文比原来缩小 */
-            line-height: 1.6 !important;
-        }
+<style>
+    /* 全局字体：英文用 Mulish，中文用 Noto Sans SC */
+    body {
+        font-family: "Mulish", "Noto Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+        font-size: 15px !important;
+        line-height: 1.6 !important;
+    }
 
-        /* 标题缩小一点，更精致 */
-        h2, .h2 {
-            font-size: 1.5rem !important;
-            font-weight: 600 !important;
-        }
+    /* 标题缩小优化 */
+    h2, .h2 {
+        font-size: 1.5rem !important;
+        font-weight: 600 !important;
+    }
 
-        /* 导航栏字体稍小 */
-        .navbar-nav .nav-link {
-            font-size: 0.95rem !important;
-        }
+    /* 导航栏字体优化 */
+    .navbar-nav .nav-link {
+        font-size: 0.95rem !important;
+    }
 
-        /* 正文内容区域字体 */
-        .main-body {
-            font-size: 15px !important;
-            font-weight: 400 !important;
-        }
+    /* 正文优化 */
+    .main-body {
+        font-size: 15px !important;
+        font-weight: 400 !important;
+    }
 
-        /* 图片禁止右键下载（你之前要的功能） */
-        img {
-            pointer-events: none !important;
-            user-select: none !important;
-            -webkit-user-drag: none !important;
-        }
-    </style>
+    /* 图片禁止右键下载 */
+    img {
+        pointer-events: none !important;
+        user-select: none !important;
+        -webkit-user-drag: none !important;
+    }
+
+    /* ====================================== */
+    /* 🔥 头像专属：边缘模糊 + 柔边 + 圆形效果 */
+    /* ====================================== */
+    #avatar img {
+        /* 圆形头像（保留） */
+        border-radius: 50% !important;
+        /* 纯透明阴影模糊（核心：无白色，全透明过渡） */
+        box-shadow: 0 0 30px 12px rgba(0, 0, 0, 0.2) !important;
+        /* 透明边缘羽化，和背景完美融合 */
+        filter: drop-shadow(0 0 15px rgba(0,0,0,0.15)) !important;
+        /* 删掉了白色边框！纯透明过渡 */
+        /* border: 3px solid #ffffff !important; */
+    }
+
+    /* 🔥 修复超链接：允许点击 + 新窗口打开 + 显示蓝色链接样式 */
+.main-body a {
+    pointer-events: auto !important;
+    color: #0d6efd !important;
+    text-decoration: underline !important;
+    cursor: pointer !important;
+}
+/* 鼠标悬浮效果 */
+.main-body a:hover {
+    color: #0a58ca !important;
+    opacity: 0.8 !important;
+}
+</style>
 
     <!-- Bootstrap core JS-->
     <script type="text/javascript" src="static/js/bootstrap.bundle.min.js"></script>
