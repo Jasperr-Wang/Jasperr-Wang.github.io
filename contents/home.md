@@ -1,10 +1,8 @@
-[![XX](https://img.shields.io/badge/Jasperr-Wang-github-blue?logo=github)](https://github.com/Jasperr-Wang)
+##### 邮箱 / Email / Contact
+<code>jasperwmjj@gmail.com</code><br>
+**Mobile:** 13703039187
 
-#### 邮箱 / Email / Contact
-<code>jasperwmjj@gmail.com</code>
-Mobile: 13703039187
-
-#### 教育经历 / Education
+##### 教育经历 / Education
 **南京大学**, 信息管理与信息系统本科 (2022.09 – 2026.06) <br>
 • GPA: 4.40/5.0 (top 30%) <br>
 • 核心能力：CET-4(607)、CET-6(519)，主修程序设计语言、人机交互等多门核心课程90+ <br>
